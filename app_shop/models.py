@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls import reverse
 from django.template.defaulttags import url
+from django.contrib.auth.models import User
 
 
 class Product(models.Model):
@@ -33,6 +34,12 @@ class Product(models.Model):
         """ Абсолютный путь к объекту Product """
         return reverse('product', kwargs={'pk': self.id, 'slug': self.status})
 
+    def get_descr(self) -> str:
+        """ Сократить длинное описание """
+        if len(self.description) > 50:
+            return self.description[:45] + '...'
+        return self.description
+
 
 class Category(models.Model):
     """ Модель записи категорий товаров в БД """
@@ -43,6 +50,7 @@ class Category(models.Model):
                                blank=True, verbose_name='родительская категория')
     favorites = models.BooleanField(default=False, verbose_name='избранное')
     image = models.FileField(upload_to='categories/', blank=True, null=True, help_text='only svg file!')
+    changed_in = models.DateTimeField(auto_now=True)
 
     class Meta:
         db_table = 'category'
@@ -55,3 +63,24 @@ class Category(models.Model):
     def get_absolute_url(self) -> url:
         """ Абсолютный путь к объекту Category """
         return reverse('category', kwargs={'slug': self.slug})
+
+
+class Order(models.Model):
+    """ Модель записи заказов в БД """
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, related_name='orders')
+    items = models.ManyToManyField(Product, through='Purchase', through_fields=('order', 'product'))
+    total_price = models.DecimalField(max_digits=10, decimal_places=2, verbose_name='сумма заказа')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='дата покупки')
+
+    class Meta:
+        db_table = 'order'
+        verbose_name = 'заказ'
+        verbose_name_plural = 'заказы'
+
+
+class Purchase(models.Model):
+    """ Промежуточная модель для связи m2m Order - Product """
+    order = models.ForeignKey(Order, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='purchases')
+    quantity_of_product = models.PositiveIntegerField(default=0)
+    price_of_product = models.DecimalField(max_digits=9, decimal_places=2)
