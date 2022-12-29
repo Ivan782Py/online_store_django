@@ -46,10 +46,11 @@
           <nav class="row-block">
             <div class="row ControlPanel-rowSplit">
               {% if request.user.is_authenticated %}
-                <div class="row-block"><a class="ControlPanel-title" href="account.html">Выход</a>
+
+                <div class="row-block"><a class="ControlPanel-title" href="account.html">{{ request.user.profile }} / Выход</a>
               {% else %}
                 <div class="row-block"><a class="ControlPanel-title" href="account.html">Войти</a>&nbsp/&nbsp
-                <div class="row-block"><a class="ControlPanel-title" href="account.html">Регистрация</a>
+                <div class="row-block"><a class="ControlPanel-title" href="{% url 'registration' %}">Регистрация</a>
               {% endif %}
               </div>
             </div>

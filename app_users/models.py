@@ -7,7 +7,7 @@ from phonenumber_field.modelfields import PhoneNumberField
 from app_shop.models import Product
 
 
-def get_user_dir(instance, filename):
+def get_user_dir(instance, filename) -> str:
     return f"users/user_{instance.user.id}"
 
 
@@ -18,7 +18,7 @@ class Profile(models.Model):
         ('advanced', 'продвинутый'),
         ('best', 'наивысший'),
     ]
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
     phone = PhoneNumberField(blank=True, verbose_name='телефон')
     status = models.CharField(max_length=10, choices=USER_STATUS, blank=True, default='starting', verbose_name='статус')
     avatar = models.ImageField(upload_to=get_user_dir, blank=True, verbose_name='аватар')
@@ -30,7 +30,7 @@ class Profile(models.Model):
         verbose_name_plural = 'профили'
 
     def __str__(self) -> str:
-        return f"{self.user.first_name} {self.user.last_name}"
+        return self.fio.split()[1]
 
     def get_absolute_url(self) -> url:
         """ Абсолютный путь к объекту Profile """
