@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'app_store.apps.AppStoreConfig',
+    'app_user.apps.AppUserConfig',
+    'app_cart.apps.AppCartConfig',
+    'phonenumber_field',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +69,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'app_cart.context_processors.get_cart',
             ],
         },
     },
@@ -144,3 +148,14 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Default region for phonenumber
+# https://django-phonenumber-field.readthedocs.io/en/latest/reference.html#phonenumber-default-region
+
+PHONENUMBER_DEFAULT_REGION = 'RU'
+
+# Cart
+
+CART_SESSION_ID = 'cart'
+
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
