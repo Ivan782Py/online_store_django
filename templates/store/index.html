@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <div>
+  <h3>Топ категорий</h3>
+  {% for category in favorites_category_list %}
+    <img src="{% static category.icon %}" alt="Иконка">
+    <a href="{% url 'catalog' slug=category.slug page=1 %}">{{ category }}</a>
+  {% endfor %}
+  <a href="{% url 'catalog' slug='all' page=1 %}">Все категории</a>
+  </div>
+
+  <div>
+  <h3>Топ продаж:</h3>
+  {% for product in top_product_list %}
+    <img src="{% static product.image %}" alt="Фото товара">
+    {{ product }}
+  {% endfor %}
+  </div>
+
+  <div>
+  <h3>Ограниченный тираж:</h3>
+  {% for product in limited_product_list %}
+    <img src="{% static product.image %}" alt="Фото товара">{{ product }}
+  {% endfor %}
+  </div>
+
+{% endblock content %}

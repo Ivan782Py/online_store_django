@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <div>{{ max_price }} {{ min_price }}</div>
+  <div>
+  <form method="get" action="{% url 'catalog' slug=get_slug page=1 %}">
+    <label>Минимальная цена:
+      <input type="text" name="min-price" value="{{ min_price }}">
+    </label>
+    <label>Максимальная цена:
+      <input type="text" name="max-price" value="{{ max_price }}">
+    </label>
+    <label>Поиск в названии:
+      <input type="text" name="search">
+    </label>
+    <div>
+      <h3>Статус продукта:</h3>
+      {% for item in product_status_list %}
+      <label>
+        <input type="checkbox" name="status-list" value="{{ item.0 }}"><span>{{ item.1 }}</span>
+      </label>
+      {% endfor %}
+    </div>
+    <input type="submit" value="Фильтровать">
+  </form>
+  </div>
+
+  <div>
+  {% if not_value %}{{ not_value }}{% endif %}
+  {% for product in product_list %}
+    <a href="{{ product.get_absolute_url }}">{{ product }}</a>
+  {% endfor %}
+  </div>
+{% endblock content %}
