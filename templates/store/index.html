@@ -4,6 +4,11 @@
 {% block content %}
 
   <div>
+    Корзина: {{ cart.get_total_price }}
+    <a href="{% url 'cart:cart_detail' %}"><img src="{% static 'cart/icons8-cart.png' %}" alt="корзина"></a>
+  </div>
+
+  <div>
   <h3>Топ категорий</h3>
   {% for category in favorites_category_list %}
     <img src="{% static category.icon %}" alt="Иконка">
@@ -17,6 +22,9 @@
   {% for product in top_product_list %}
     <img src="{% static product.image %}" alt="Фото товара">
     {{ product }}
+    <form method="post" action="{% url 'cart:cart_add' product.id %}">{% csrf_token %}
+      <input type="image" src="{% static 'cart/icons8-cart-add.png' %}" alt="в корзину">
+    </form>
   {% endfor %}
   </div>
 
