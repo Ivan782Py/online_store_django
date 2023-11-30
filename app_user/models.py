@@ -16,7 +16,7 @@ def get_user_dir(instance, filename) -> str:
 class Profile(models.Model):
     """ Профиль пользователя """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    phone = PhoneNumberField(unique=True)
+    phone = PhoneNumberField(blank=True)
     fio = models.CharField(max_length=50, blank=True, verbose_name='Ф.И.О.')
     avatar = models.ImageField(upload_to=get_user_dir, blank=True, verbose_name='аватар')
     city = models.CharField(max_length=30, blank=True, verbose_name='город')
@@ -30,11 +30,9 @@ class Profile(models.Model):
 
     def __str__(self) -> str:
         """ Получаем имя пользователя """
-        return self.fio.split()[1]
-
-    def get_absolute_url(self) -> url:
-        """ Абсолютный путь к профилю пользователя """
-        return reverse('user', kwargs={'pk': self.user_id})
+        if self.fio:
+            return self.fio.split()[1]
+        return self.user.username
 
 
 class Review(models.Model):

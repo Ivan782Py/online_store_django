@@ -3,6 +3,8 @@
 
 {% block content %}
 
+  <div>Пользователь: {{ request.user }}</div>
+
   <div>
     Корзина: {{ cart.get_total_price }}
     <a href="{% url 'cart:cart_detail' %}"><img src="{% static 'cart/icons8-cart.png' %}" alt="корзина"></a>
