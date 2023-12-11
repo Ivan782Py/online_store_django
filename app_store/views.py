@@ -76,3 +76,8 @@ class ProductDetailView(DetailView):
     """ Страница с детальной инфо о товаре """
     model = Product
     template_name = 'store/product_detail.html'
+
+
+class AboutView(TemplateView):
+    """ Описание магазина """
+    template_name = 'store/about.html'
