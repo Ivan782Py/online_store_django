@@ -1,396 +1,394 @@
-{
-  "property": [
-    {
-      "model": "app_store.product",
-      "pk": 1,
-      "fields": {
-        "name": "ПК-1",
-        "count": 38,
-        "price": "56800.00",
-        "category": 2,
-        "status": "limit_ed",
-        "image": "products/pc.png",
-        "created_at": "2023-12-22",
-        "description": "Описание ПК-1"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 2,
-      "fields": {
-        "name": "ПК-2",
-        "count": 47,
-        "price": "64300.00",
-        "category": 2,
-        "status": "top",
-        "image": "products/pc_6XqDr63.png",
-        "created_at": "2023-12-22",
-        "description": "Описание ПК-2"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 3,
-      "fields": {
-        "name": "ПК-3",
-        "count": 25,
-        "price": "58900.00",
-        "category": 2,
-        "status": "limit_ed",
-        "image": "products/pc_puVr7oJ.png",
-        "created_at": "2023-12-22",
-        "description": "Описание ПК-3"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 4,
-      "fields": {
-        "name": "ПК-4",
-        "count": 37,
-        "price": "46700.00",
-        "category": 2,
-        "status": "limit_ed",
-        "image": "products/pc_oxXWaFp.png",
-        "created_at": "2023-12-22",
-        "description": "Описание ПК-4"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 5,
-      "fields": {
-        "name": "ПК-5",
-        "count": 39,
-        "price": "49500.00",
-        "category": 2,
-        "status": "limit_ed",
-        "image": "products/pc_FJPF8zD.png",
-        "created_at": "2023-12-22",
-        "description": "Описание ПК-5"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 6,
-      "fields": {
-        "name": "Ноут-1",
-        "count": 65,
-        "price": "45000.00",
-        "category": 3,
-        "status": "default",
-        "image": "products/laptop.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Ноут-1"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 7,
-      "fields": {
-        "name": "Ноут-2",
-        "count": 29,
-        "price": "56700.00",
-        "category": 3,
-        "status": "limit_ed",
-        "image": "products/laptop_ZxI6LgH.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Ноут-2"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 8,
-      "fields": {
-        "name": "Ноут-3",
-        "count": 33,
-        "price": "70000.00",
-        "category": 3,
-        "status": "limit_ed",
-        "image": "products/laptop_63W03BY.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Ноут-3"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 9,
-      "fields": {
-        "name": "Ноут-4",
-        "count": 54,
-        "price": "54000.00",
-        "category": 3,
-        "status": "top",
-        "image": "products/laptop_DT6ZKY2.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Ноут-4"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 10,
-      "fields": {
-        "name": "Ноут-5",
-        "count": 55,
-        "price": "55000.00",
-        "category": 3,
-        "status": "top",
-        "image": "products/laptop_A8mIraw.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Ноут-5"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 11,
-      "fields": {
-        "name": "Холод-1",
-        "count": 44,
-        "price": "8900.00",
-        "category": 5,
-        "status": "top",
-        "image": "products/fridge.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Холод-1"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 12,
-      "fields": {
-        "name": "Холод-2",
-        "count": 22,
-        "price": "13000.00",
-        "category": 5,
-        "status": "limit_ed",
-        "image": "products/fridge_vfTN6PD.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Холод-2"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 13,
-      "fields": {
-        "name": "Холод-3",
-        "count": 23,
-        "price": "25000.00",
-        "category": 5,
-        "status": "limit_ed",
-        "image": "products/fridge_PaMndDB.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Холод-3"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 14,
-      "fields": {
-        "name": "Холод-4",
-        "count": 44,
-        "price": "20000.00",
-        "category": 5,
-        "status": "top",
-        "image": "products/fridge_Uzjrw2Z.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Холод-4"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 15,
-      "fields": {
-        "name": "Холод-5",
-        "count": 55,
-        "price": "21000.00",
-        "category": 5,
-        "status": "top",
-        "image": "products/fridge_tu2ynZf.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Холод-5"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 16,
-      "fields": {
-        "name": "СВЧ-1",
-        "count": 15,
-        "price": "7600.00",
-        "category": 6,
-        "status": "limit_ed",
-        "image": "products/microwave.png",
-        "created_at": "2023-12-22",
-        "description": "Описание СВЧ-1"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 17,
-      "fields": {
-        "name": "СВЧ-2",
-        "count": 22,
-        "price": "12000.00",
-        "category": 6,
-        "status": "limit_ed",
-        "image": "products/microwave_N2O7FUC.png",
-        "created_at": "2023-12-22",
-        "description": "Описание СВЧ-2"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 18,
-      "fields": {
-        "name": "СВЧ-3",
-        "count": 33,
-        "price": "16000.00",
-        "category": 6,
-        "status": "limit_ed",
-        "image": "products/microwave_CXt1Rhi.png",
-        "created_at": "2023-12-22",
-        "description": "Описание СВЧ-3"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 19,
-      "fields": {
-        "name": "СВЧ-4",
-        "count": 44,
-        "price": "19000.00",
-        "category": 6,
-        "status": "top",
-        "image": "products/microwave_CRulBq8.png",
-        "created_at": "2023-12-22",
-        "description": "Описание СВЧ-4"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 20,
-      "fields": {
-        "name": "ТВ-1",
-        "count": 38,
-        "price": "25000.00",
-        "category": 7,
-        "status": "limit_ed",
-        "image": "products/tv.png",
-        "created_at": "2023-12-22",
-        "description": "Описание ТВ-1"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 21,
-      "fields": {
-        "name": "ТВ-2",
-        "count": 22,
-        "price": "23500.00",
-        "category": 7,
-        "status": "limit_ed",
-        "image": "products/tv_WXi9byZ.png",
-        "created_at": "2023-12-22",
-        "description": "Описание ТВ-2"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 22,
-      "fields": {
-        "name": "ТВ-3",
-        "count": 33,
-        "price": "34000.00",
-        "category": 7,
-        "status": "limit_ed",
-        "image": "products/tv_wjzjVWp.png",
-        "created_at": "2023-12-22",
-        "description": "Описание ТВ-3"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 23,
-      "fields": {
-        "name": "Смарт-1",
-        "count": 67,
-        "price": "25000.00",
-        "category": 8,
-        "status": "default",
-        "image": "products/phone.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Смарт-1"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 24,
-      "fields": {
-        "name": "Смарт-2",
-        "count": 44,
-        "price": "30000.00",
-        "category": 8,
-        "status": "top",
-        "image": "products/phone_ly061X2.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Смарт-2"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 25,
-      "fields": {
-        "name": "Смарт-3",
-        "count": 17,
-        "price": "23600.00",
-        "category": 8,
-        "status": "limit_ed",
-        "image": "products/phone_f6aKmDb.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Смарт-3"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 26,
-      "fields": {
-        "name": "Коптер-1",
-        "count": 65,
-        "price": "34000.00",
-        "category": 9,
-        "status": "top",
-        "image": "products/other.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Коптер-1"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 27,
-      "fields": {
-        "name": "Коптер-2",
-        "count": 22,
-        "price": "22000.00",
-        "category": 9,
-        "status": "limit_ed",
-        "image": "products/other_sbmPgtX.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Коптер-2"
-      }
-    },
-    {
-      "model": "app_store.product",
-      "pk": 28,
-      "fields": {
-        "name": "Коптер-3",
-        "count": 33,
-        "price": "22000.00",
-        "category": 9,
-        "status": "limit_ed",
-        "image": "products/other_9mlBUP5.png",
-        "created_at": "2023-12-22",
-        "description": "Описание Коптер-3"
-      }
+[
+  {
+    "model": "app_store.product",
+    "pk": 1,
+    "fields": {
+      "name": "РџРљ-1",
+      "count": 38,
+      "price": "56800.00",
+      "category": 2,
+      "status": "limit_ed",
+      "image": "products/pc.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РџРљ-1"
     }
-  ]
-}
+  },
+  {
+    "model": "app_store.product",
+    "pk": 2,
+    "fields": {
+      "name": "РџРљ-2",
+      "count": 47,
+      "price": "64300.00",
+      "category": 2,
+      "status": "top",
+      "image": "products/pc_6XqDr63.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РџРљ-2"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 3,
+    "fields": {
+      "name": "РџРљ-3",
+      "count": 25,
+      "price": "58900.00",
+      "category": 2,
+      "status": "limit_ed",
+      "image": "products/pc_puVr7oJ.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РџРљ-3"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 4,
+    "fields": {
+      "name": "РџРљ-4",
+      "count": 37,
+      "price": "46700.00",
+      "category": 2,
+      "status": "limit_ed",
+      "image": "products/pc_oxXWaFp.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РџРљ-4"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 5,
+    "fields": {
+      "name": "РџРљ-5",
+      "count": 39,
+      "price": "49500.00",
+      "category": 2,
+      "status": "limit_ed",
+      "image": "products/pc_FJPF8zD.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РџРљ-5"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 6,
+    "fields": {
+      "name": "РќРѕСѓС‚-1",
+      "count": 65,
+      "price": "45000.00",
+      "category": 3,
+      "status": "default",
+      "image": "products/laptop.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РќРѕСѓС‚-1"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 7,
+    "fields": {
+      "name": "РќРѕСѓС‚-2",
+      "count": 29,
+      "price": "56700.00",
+      "category": 3,
+      "status": "limit_ed",
+      "image": "products/laptop_ZxI6LgH.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РќРѕСѓС‚-2"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 8,
+    "fields": {
+      "name": "РќРѕСѓС‚-3",
+      "count": 33,
+      "price": "70000.00",
+      "category": 3,
+      "status": "limit_ed",
+      "image": "products/laptop_63W03BY.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РќРѕСѓС‚-3"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 9,
+    "fields": {
+      "name": "РќРѕСѓС‚-4",
+      "count": 54,
+      "price": "54000.00",
+      "category": 3,
+      "status": "top",
+      "image": "products/laptop_DT6ZKY2.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РќРѕСѓС‚-4"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 10,
+    "fields": {
+      "name": "РќРѕСѓС‚-5",
+      "count": 55,
+      "price": "55000.00",
+      "category": 3,
+      "status": "top",
+      "image": "products/laptop_A8mIraw.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РќРѕСѓС‚-5"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 11,
+    "fields": {
+      "name": "РҐРѕР»РѕРґ-1",
+      "count": 44,
+      "price": "8900.00",
+      "category": 5,
+      "status": "top",
+      "image": "products/fridge.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РҐРѕР»РѕРґ-1"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 12,
+    "fields": {
+      "name": "РҐРѕР»РѕРґ-2",
+      "count": 22,
+      "price": "13000.00",
+      "category": 5,
+      "status": "limit_ed",
+      "image": "products/fridge_vfTN6PD.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РҐРѕР»РѕРґ-2"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 13,
+    "fields": {
+      "name": "РҐРѕР»РѕРґ-3",
+      "count": 23,
+      "price": "25000.00",
+      "category": 5,
+      "status": "limit_ed",
+      "image": "products/fridge_PaMndDB.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РҐРѕР»РѕРґ-3"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 14,
+    "fields": {
+      "name": "РҐРѕР»РѕРґ-4",
+      "count": 44,
+      "price": "20000.00",
+      "category": 5,
+      "status": "top",
+      "image": "products/fridge_Uzjrw2Z.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РҐРѕР»РѕРґ-4"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 15,
+    "fields": {
+      "name": "РҐРѕР»РѕРґ-5",
+      "count": 55,
+      "price": "21000.00",
+      "category": 5,
+      "status": "top",
+      "image": "products/fridge_tu2ynZf.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РҐРѕР»РѕРґ-5"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 16,
+    "fields": {
+      "name": "РЎР’Р§-1",
+      "count": 15,
+      "price": "7600.00",
+      "category": 6,
+      "status": "limit_ed",
+      "image": "products/microwave.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РЎР’Р§-1"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 17,
+    "fields": {
+      "name": "РЎР’Р§-2",
+      "count": 22,
+      "price": "12000.00",
+      "category": 6,
+      "status": "limit_ed",
+      "image": "products/microwave_N2O7FUC.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РЎР’Р§-2"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 18,
+    "fields": {
+      "name": "РЎР’Р§-3",
+      "count": 33,
+      "price": "16000.00",
+      "category": 6,
+      "status": "limit_ed",
+      "image": "products/microwave_CXt1Rhi.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РЎР’Р§-3"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 19,
+    "fields": {
+      "name": "РЎР’Р§-4",
+      "count": 44,
+      "price": "19000.00",
+      "category": 6,
+      "status": "top",
+      "image": "products/microwave_CRulBq8.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РЎР’Р§-4"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 20,
+    "fields": {
+      "name": "РўР’-1",
+      "count": 38,
+      "price": "25000.00",
+      "category": 7,
+      "status": "limit_ed",
+      "image": "products/tv.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РўР’-1"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 21,
+    "fields": {
+      "name": "РўР’-2",
+      "count": 22,
+      "price": "23500.00",
+      "category": 7,
+      "status": "limit_ed",
+      "image": "products/tv_WXi9byZ.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РўР’-2"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 22,
+    "fields": {
+      "name": "РўР’-3",
+      "count": 33,
+      "price": "34000.00",
+      "category": 7,
+      "status": "limit_ed",
+      "image": "products/tv_wjzjVWp.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РўР’-3"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 23,
+    "fields": {
+      "name": "РЎРјР°СЂС‚-1",
+      "count": 67,
+      "price": "25000.00",
+      "category": 8,
+      "status": "default",
+      "image": "products/phone.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РЎРјР°СЂС‚-1"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 24,
+    "fields": {
+      "name": "РЎРјР°СЂС‚-2",
+      "count": 44,
+      "price": "30000.00",
+      "category": 8,
+      "status": "top",
+      "image": "products/phone_ly061X2.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РЎРјР°СЂС‚-2"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 25,
+    "fields": {
+      "name": "РЎРјР°СЂС‚-3",
+      "count": 17,
+      "price": "23600.00",
+      "category": 8,
+      "status": "limit_ed",
+      "image": "products/phone_f6aKmDb.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РЎРјР°СЂС‚-3"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 26,
+    "fields": {
+      "name": "РљРѕРїС‚РµСЂ-1",
+      "count": 65,
+      "price": "34000.00",
+      "category": 9,
+      "status": "top",
+      "image": "products/other.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РљРѕРїС‚РµСЂ-1"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 27,
+    "fields": {
+      "name": "РљРѕРїС‚РµСЂ-2",
+      "count": 22,
+      "price": "22000.00",
+      "category": 9,
+      "status": "limit_ed",
+      "image": "products/other_sbmPgtX.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РљРѕРїС‚РµСЂ-2"
+    }
+  },
+  {
+    "model": "app_store.product",
+    "pk": 28,
+    "fields": {
+      "name": "РљРѕРїС‚РµСЂ-3",
+      "count": 33,
+      "price": "22000.00",
+      "category": 9,
+      "status": "limit_ed",
+      "image": "products/other_9mlBUP5.png",
+      "created_at": "2023-12-22",
+      "description": "РћРїРёСЃР°РЅРёРµ РљРѕРїС‚РµСЂ-3"
+    }
+  }
+]

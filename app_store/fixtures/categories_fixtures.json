@@ -1,1 +1,110 @@
-[{"model": "app_store.category", "pk": 1, "fields": {"name": "ПК и ноутбуки", "slug": "pc-laptop", "parent": null, "favorites": false, "icon": "categories/icons8-рабочая-станция-24.png", "changed_in": "2023-12-22T03:28:40.350Z"}}, {"model": "app_store.category", "pk": 2, "fields": {"name": "ПК", "slug": "pc", "parent": 1, "favorites": false, "icon": "categories/icons8-компьютер-на-столе-24.png", "changed_in": "2023-12-22T03:29:09.762Z"}}, {"model": "app_store.category", "pk": 3, "fields": {"name": "Ноутбуки", "slug": "laptop", "parent": 1, "favorites": false, "icon": "categories/icons8-ноутбук-24.png", "changed_in": "2023-12-22T03:29:42.796Z"}}, {"model": "app_store.category", "pk": 4, "fields": {"name": "Бытовая техника", "slug": "appliances", "parent": null, "favorites": false, "icon": "categories/icons8-бытовая-техника-24.png", "changed_in": "2023-12-22T03:30:45.381Z"}}, {"model": "app_store.category", "pk": 5, "fields": {"name": "Холодильники", "slug": "fridge", "parent": 4, "favorites": false, "icon": "categories/icons8-холодильник-24.png", "changed_in": "2023-12-22T03:31:07.165Z"}}, {"model": "app_store.category", "pk": 6, "fields": {"name": "СВЧ печи", "slug": "microwave", "parent": 4, "favorites": false, "icon": "categories/icons8-микроволновая-печь-24.png", "changed_in": "2023-12-22T03:31:27.029Z"}}, {"model": "app_store.category", "pk": 7, "fields": {"name": "Телевизоры", "slug": "tv", "parent": null, "favorites": false, "icon": "categories/icons8-телевизор-24.png", "changed_in": "2023-12-22T03:31:52.854Z"}}, {"model": "app_store.category", "pk": 8, "fields": {"name": "Смартфоны", "slug": "phone", "parent": null, "favorites": false, "icon": "categories/icons8-смартфон-24.png", "changed_in": "2023-12-22T03:32:16.777Z"}}, {"model": "app_store.category", "pk": 9, "fields": {"name": "Другое", "slug": "other", "parent": null, "favorites": false, "icon": "categories/icons8-водяное-колесо-24.png", "changed_in": "2023-12-22T03:32:40.585Z"}}]
+[
+  {
+    "model": "app_store.category",
+    "pk": 1,
+    "fields": {
+      "name": "РџРљ Рё РЅРѕСѓС‚Р±СѓРєРё",
+      "slug": "pc-laptop",
+      "parent": null,
+      "favorites": false,
+      "icon": "categories/icons8-СЂР°Р±РѕС‡Р°СЏ-СЃС‚Р°РЅС†РёСЏ-24.png",
+      "changed_in": "2023-12-22T03:28:40.350Z"
+    }
+  },
+  {
+    "model": "app_store.category",
+    "pk": 2,
+    "fields": {
+      "name": "РџРљ",
+      "slug": "pc",
+      "parent": 1,
+      "favorites": false,
+      "icon": "categories/icons8-РєРѕРјРїСЊСЋС‚РµСЂ-РЅР°-СЃС‚РѕР»Рµ-24.png",
+      "changed_in": "2023-12-22T03:29:09.762Z"
+    }
+  },
+  {
+    "model": "app_store.category",
+    "pk": 3,
+    "fields": {
+      "name": "РќРѕСѓС‚Р±СѓРєРё",
+      "slug": "laptop",
+      "parent": 1,
+      "favorites": false,
+      "icon": "categories/icons8-РЅРѕСѓС‚Р±СѓРє-24.png",
+      "changed_in": "2023-12-22T03:29:42.796Z"
+    }
+  },
+  {
+    "model": "app_store.category",
+    "pk": 4,
+    "fields": {
+      "name": "Р‘С‹С‚РѕРІР°СЏ С‚РµС…РЅРёРєР°",
+      "slug": "appliances",
+      "parent": null,
+      "favorites": false,
+      "icon": "categories/icons8-Р±С‹С‚РѕРІР°СЏ-С‚РµС…РЅРёРєР°-24.png",
+      "changed_in": "2023-12-22T03:30:45.381Z"
+    }
+  },
+  {
+    "model": "app_store.category",
+    "pk": 5,
+    "fields": {
+      "name": "РҐРѕР»РѕРґРёР»СЊРЅРёРєРё",
+      "slug": "fridge",
+      "parent": 4,
+      "favorites": false,
+      "icon": "categories/icons8-С…РѕР»РѕРґРёР»СЊРЅРёРє-24.png",
+      "changed_in": "2023-12-22T03:31:07.165Z"
+    }
+  },
+  {
+    "model": "app_store.category",
+    "pk": 6,
+    "fields": {
+      "name": "РЎР’Р§ РїРµС‡Рё",
+      "slug": "microwave",
+      "parent": 4,
+      "favorites": false,
+      "icon": "categories/icons8-РјРёРєСЂРѕРІРѕР»РЅРѕРІР°СЏ-РїРµС‡СЊ-24.png",
+      "changed_in": "2023-12-22T03:31:27.029Z"
+    }
+  },
+  {
+    "model": "app_store.category",
+    "pk": 7,
+    "fields": {
+      "name": "РўРµР»РµРІРёР·РѕСЂС‹",
+      "slug": "tv",
+      "parent": null,
+      "favorites": false,
+      "icon": "categories/icons8-С‚РµР»РµРІРёР·РѕСЂ-24.png",
+      "changed_in": "2023-12-22T03:31:52.854Z"
+    }
+  },
+  {
+    "model": "app_store.category",
+    "pk": 8,
+    "fields": {
+      "name": "РЎРјР°СЂС‚С„РѕРЅС‹",
+      "slug": "phone",
+      "parent": null,
+      "favorites": false,
+      "icon": "categories/icons8-СЃРјР°СЂС‚С„РѕРЅ-24.png",
+      "changed_in": "2023-12-22T03:32:16.777Z"
+    }
+  },
+  {
+    "model": "app_store.category",
+    "pk": 9,
+    "fields": {
+      "name": "Р”СЂСѓРіРѕРµ",
+      "slug": "other",
+      "parent": null,
+      "favorites": false,
+      "icon": "categories/icons8-РІРѕРґСЏРЅРѕРµ-РєРѕР»РµСЃРѕ-24.png",
+      "changed_in": "2023-12-22T03:32:40.585Z"
+    }
+  }
+]
